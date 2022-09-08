@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{1782C8FB-8D53-4F3D-BBCD-FFD6F03C8637}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleUI1", "ConsoleUI1\ConsoleUI1.csproj", "{A7807F5B-0593-463C-A6A0-BED2DE1E4FDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleUI1", "ConsoleUI1\ConsoleUI1.csproj", "{A7807F5B-0593-463C-A6A0-BED2DE1E4FDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

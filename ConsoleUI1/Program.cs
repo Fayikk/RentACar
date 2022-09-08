@@ -18,11 +18,11 @@ namespace MyApp // Note: actual namespace depends on the project name.
             //}
 
 
-            CarManager carManager = new CarManager(new OracleDataBase());
-            foreach (var car in carManager.GetAll())
-            {
-                Console.WriteLine(car.Brand);
-            }
+            //CarManager carManager = new CarManager(new OracleDataBase());
+            //foreach (var car in carManager.GetAll())
+            //{
+            //    Console.WriteLine(car.Brand);
+            //}
 
         }
     }

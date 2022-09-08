@@ -15,9 +15,9 @@ namespace DataAccess.Concrete
         {
             _cars = new List<Car>
             {
-                new Car{Brand="Mercedes",BrandId=1,ColorId=1,DailyPrice=1000,Id=1,ModelYear=2020 },
-                new Car{Brand="Bmw",BrandId=2,ColorId=2,DailyPrice=1200,Id=2,ModelYear=2021 },
-                new Car{Brand="Audı",BrandId=3,ColorId=3,DailyPrice=1400,Id=3,ModelYear=2022 },
+                new Car{Brand="Mercedes",ColorId=1,DailyPrice=1000,Id=1,ModelYear=2020 },
+                new Car{Brand="Bmw",ColorId=2,DailyPrice=1200,Id=2,ModelYear=2021 },
+                new Car{Brand="Audı",ColorId=3,DailyPrice=1400,Id=3,ModelYear=2022 },
             };
         }
 
@@ -39,23 +39,23 @@ namespace DataAccess.Concrete
             return _cars;
         }
 
-        public List<Car> GetById(int BrandId)
-        {
-            return _cars.Where(a => a.BrandId == BrandId).ToList();
-        }
+        //public List<Car> GetById(int BrandId)
+        //{
+        //    return _cars.Where(a => a.BrandId == BrandId).ToList();
+        //}
 
-        public void Update(Car car)
-        {
-            Car CarToUpdate;
-            CarToUpdate=_cars.SingleOrDefault(a => a.Id == car.Id);
-            CarToUpdate.DailyPrice = car.DailyPrice;
-            CarToUpdate.Brand = car.Brand;
-            CarToUpdate.BrandId = car.BrandId;
-            CarToUpdate.ColorId = car.ColorId;
-            CarToUpdate.Brand = car.Brand;
+        //public void Update(Car car)
+        //{
+        //    Car CarToUpdate;
+        //    CarToUpdate=_cars.SingleOrDefault(a => a.Id == car.Id);
+        //    CarToUpdate.DailyPrice = car.DailyPrice;
+        //    CarToUpdate.Brand = car.Brand;
+        //    CarToUpdate.BrandId = car.BrandId;
+        //    CarToUpdate.ColorId = car.ColorId;
+        //    CarToUpdate.Brand = car.Brand;
 
 
 
-        }
+        //}
     }
 }

@@ -18,9 +18,23 @@ namespace Business.Concrete
             _ICarDal = CarDal;
         }
 
+        public List<Car> Add(Car car)
+        {
+            throw new NotImplementedException();
+        }
+
         public List<Car> GetAll()
         {
             return _ICarDal.GetAll();
+        }
+
+        
+
+       
+
+        List<Color> ICarService.GetCarsByColorId(int min, int max)
+        {
+            return _ICarDal.GetAll(p => p. >= min && p.ColorId <= max);
         }
     }
 }
